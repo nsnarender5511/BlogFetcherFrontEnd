@@ -1,0 +1,58 @@
+/*.card:hover {
+    background-color: #ff0000;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: aqua 0px 0px 10px;
+    transition: background-color 0.5s;
+    animation: bounce 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}*/
+
+.card:hover {
+    background-color: #355c7d; /* Dark desaturated blue */
+    color: #f8f8f8; /* Soft white for text */
+    transform: translateY(-5px); /* Slight upward lift */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Smooth shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s; /* Smooth and quick transition */
+}
+
+.card {
+    /* Reset the rest of the card styles to ensure a clean slate */
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark grey text for contrast */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s; /* Transition for mouse out effect */
+    /* Other necessary styles here */
+}
+
+
+.newnavbar{
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top : 0;
+}
+
+@keyframes bounce {
+   0%{
+       transform: translateY(0px);
+   }
+
+   100%{
+       transform: translateY(-10px);
+   }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 0px 10px rgba(74, 144, 226, 0.5);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 15px rgba(74, 144, 226, 0.75);
+    }
+}
+
+
